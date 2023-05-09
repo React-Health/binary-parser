@@ -315,6 +315,10 @@ export class Parser {
     return (type + this.endian.toLowerCase()) as PrimitiveTypes;
   }
 
+  primitiveOf(varName: string, type: string, options: ParserOptions = {}): this {
+    return this.primitiveN(type as PrimitiveTypes, varName, options);
+  }
+
   uint8(varName: string, options: ParserOptions = {}): this {
     return this.primitiveN("uint8", varName, options);
   }
