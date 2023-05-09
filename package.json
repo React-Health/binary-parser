@@ -1,5 +1,5 @@
 {
-  "name": "@React-Health/binary-parser",
+  "name": "@react-health/binary-parser",
   "version": "1.0.0",
   "description": "Blazing-fast binary parser builder",
   "main": "dist/binary_parser.js",
