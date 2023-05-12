@@ -431,6 +431,10 @@ export class Parser {
     return this.setNextParser("bit", varName, options);
   }
 
+  bits(varName: string, numBits: number,  options: ParserOptions = {}): this {
+    return this.bitN(numBits as BitSizes, varName, options);
+  }
+
   bit1(varName: string, options: ParserOptions = {}): this {
     return this.bitN(1, varName, options);
   }
